@@ -4,10 +4,6 @@ import { connect } from "react-redux";
 import { getRecipes } from "../actions/myRecipes";
 
 class Recipes extends React.Component {
-  componentDidMount() {
-    this.props.getRecipes();
-  }
-
   render() {
     return (
       <div className="recipes">
