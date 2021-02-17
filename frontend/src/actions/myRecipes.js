@@ -29,9 +29,9 @@ function createRecipes(recipes) {
   };
 }
 
-function favoriteRecipes(recipe) {
-  const updatedRecipe = Object.assign(...recipe, {
-    favorites: recipe.favorites + 1,
+function favoriteButton(recipes) {
+  const updatedRecipe = Object.assign(...recipes, {
+    favorites: recipes.favorites + 1,
   });
   return (dispatch) => {
     fetch("http://localhost:3000/recipes/${recipes.id)", {
@@ -44,10 +44,10 @@ function favoriteRecipes(recipe) {
     })
       .then((res) => res.json())
       .then((recipe) => {
-        console.log(favoriteRecipes);
-        dispatch({ type: "FAVORITE_RECIPES", payload: recipe });
+        console.log(favoriteButton);
+        dispatch({ type: "FAVORITE_BUTTON", payload: recipe });
       });
   };
 }
 
-export { createRecipes, getRecipes };
+export { favoriteButton, createRecipes, getRecipes };

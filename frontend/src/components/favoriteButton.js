@@ -12,4 +12,4 @@ class favoriteButton extends React.Component {
   }
 }
 
-export default favoriteButton;
+export default connect(null, { favoriteButton })(FavoriteButton);
