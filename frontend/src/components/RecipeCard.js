@@ -15,7 +15,7 @@ class RecipeCard extends React.Component {
         <img src={thumbnail} />
         <br></br>
         <button onClick={() => this.OnClick(this.props.recipeObj)}>
-          Add to favorites
+          Add to Favorites
         </button>
       </div>
     );

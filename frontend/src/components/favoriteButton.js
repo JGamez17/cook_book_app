@@ -4,7 +4,7 @@ class favoriteButton extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={this.props.favoriteRecipe} className="favorites">
+        <button onClick={this.props.favoriteButton} className="favorites">
           Favorites {this.props.recipeObj}
         </button>
       </div>
@@ -12,4 +12,4 @@ class favoriteButton extends React.Component {
   }
 }
 
-export default Button;
+export default favoriteButton;

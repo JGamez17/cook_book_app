@@ -8,6 +8,7 @@ import About from "./components/About";
 import CreateRecipe from "./components/CreateRecipe";
 import { getRecipes } from "./actions/myRecipes";
 import { connect } from "react-redux";
+import FavoriteButton from "./components/FavoriteButton";
 
 class App extends React.Component {
   componentDidMount() {
@@ -15,6 +16,9 @@ class App extends React.Component {
   }
 
   render() {
+    // const { recipes, match } = this.props;
+    // const sortedRecipes = recipes.sort(function (a, b) {
+    //   return b.favorites - a.favorites;
     return (
       <div className="App">
         <Router>
@@ -24,6 +28,7 @@ class App extends React.Component {
             <Route path="/recipes" component={Recipes}></Route>
             <Route path="/about" component={About}></Route>
             <Route path="/add_recipe" component={CreateRecipe}></Route>
+            <Route path="/favorites" component={FavoriteButton}></Route>
           </Switch>
         </Router>
       </div>
