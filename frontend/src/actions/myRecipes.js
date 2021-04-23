@@ -2,10 +2,10 @@
 
 function getRecipes() {
   return (dispatch) => {
+    console.log("c");
     fetch("http://localhost:3000/recipes")
       .then((res) => res.json())
       .then((recipes) => {
-        // debugger;
         dispatch({ type: "GET_RECIPES", payload: recipes });
       });
   };
@@ -29,25 +29,25 @@ function createRecipes(recipes) {
   };
 }
 
-function favoriteButton(recipes) {
-  const updatedRecipe = Object.assign(...recipes, {
-    favorites: recipes.favorites + 1,
-  });
-  return (dispatch) => {
-    fetch("http://localhost:3000/recipes/${recipes.id)", {
-      method: "PUT",
-      headers: {
-        "Content-type": "application/json",
-        accept: "application/json",
-      },
-      body: JSON.stringify({ recipes: updatedRecipe }),
-    })
-      .then((res) => res.json())
-      .then((recipe) => {
-        console.log(favoriteButton);
-        dispatch({ type: "FAVORITE_BUTTON", payload: recipe });
-      });
-  };
-}
+// function favoriteButton(recipes) {
+//   const updatedRecipe = Object.assign(...recipes, {
+//     favorites: recipes.favorites + 1,
+//   });
+//   return (dispatch) => {
+//     fetch("http://localhost:3000/recipes/${recipes.id)", {
+//       method: "PUT",
+//       headers: {
+//         "Content-type": "application/json",
+//         accept: "application/json",
+//       },
+//       body: JSON.stringify({ recipes: updatedRecipe }),
+//     })
+//       .then((res) => res.json())
+//       .then((recipe) => {
+//         console.log(favoriteButton);
+//         dispatch({ type: "FAVORITE_BUTTON", payload: recipe });
+//       });
+//   };
+// }
 
-export { favoriteButton, createRecipes, getRecipes };
+export { createRecipes, getRecipes };

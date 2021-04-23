@@ -1,7 +1,7 @@
 import React from "react";
 import RecipeCard from "../components/RecipeCard";
 import { connect } from "react-redux";
-import { getRecipes } from "../actions/myRecipes";
+// import { getRecipes } from "../actions/myRecipes";
 
 class Recipes extends React.Component {
   render() {
@@ -21,6 +21,6 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { getRecipes })(Recipes);
+export default connect(mapStateToProps)(Recipes);
 
 //renders recipe card

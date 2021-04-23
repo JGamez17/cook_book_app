@@ -1,4 +1,5 @@
 import React from "react";
+import { connect } from "react-redux";
 
 class favoriteButton extends React.Component {
   render() {
@@ -12,4 +13,4 @@ class favoriteButton extends React.Component {
   }
 }
 
-export default connect(null, { favoriteButton })(FavoriteButton);
+// export default connect(null, { favoriteButton })(FavoriteButton);

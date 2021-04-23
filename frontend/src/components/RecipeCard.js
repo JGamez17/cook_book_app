@@ -1,11 +1,14 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import { favoriteButton } from "../actions/myRecipes";
+
 
 class RecipeCard extends React.Component {
-  handleOnClick = (e) => {
-    this.props.favoriteButton(this.state);
+  state = { favorite: 0 };
+
+  handleOnClick = () => {
+    this.setState({
+      favorite: this.state.favorite + 1
+    });
   };
 
   render() {
@@ -16,8 +19,9 @@ class RecipeCard extends React.Component {
         <div>{prep}</div>
         <div>{ingredients}</div>
         <br></br>
-        <img src={thumbnail} />
+        <img src={thumbnail} alt="images" />
         <br></br>
+        {this.state.favorite}
         <button onClick={this.handleOnClick}>Add to Favorites</button>
       </div>
     );
@@ -28,5 +32,5 @@ const mapStateToProps = (state) => {
   console.log(state);
 };
 
-export default connect(mapStateToProps, { favoriteButton })(RecipeCard);
+export default connect(mapStateToProps)(RecipeCard);
 // exporting the combination of a component that is connected to the store
