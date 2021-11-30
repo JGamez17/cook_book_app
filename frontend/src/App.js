@@ -16,9 +16,6 @@ class App extends React.Component {
   }
 
   render() {
-    // const { recipes, match } = this.props;
-    // const sortedRecipes = recipes.sort(function (a, b) {
-    //   return b.favorites - a.favorites;
     return (
       <div className="App">
         <Router>

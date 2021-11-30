@@ -19,7 +19,9 @@ class CreateRecipe extends Component {
 
   handleOnClick = (e) => {
     e.preventDefault();
+    console.log("a")
     this.props.createRecipes(this.state);
+    console.log("b")
   };
 
   render() {

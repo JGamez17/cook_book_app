@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 
 class RecipeCard extends React.Component {
+
   state = { favorite: 0 };
 
   handleOnClick = () => {
@@ -21,16 +22,18 @@ class RecipeCard extends React.Component {
         <br></br>
         <img src={thumbnail} alt="images" />
         <br></br>
+
         {this.state.favorite}
         <button onClick={this.handleOnClick}>Add to Favorites</button>
+
       </div>
     );
   }
 }
 
-const mapStateToProps = (state) => {
-  console.log(state);
-};
+const mapStateToProps = (state) => ({
+  recipes: state.recipes
+});
 
 export default connect(mapStateToProps)(RecipeCard);
 // exporting the combination of a component that is connected to the store

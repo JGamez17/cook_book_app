@@ -13,4 +13,4 @@ class favoriteButton extends React.Component {
   }
 }
 
-// export default connect(null, { favoriteButton })(FavoriteButton);
+
