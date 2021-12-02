@@ -17,8 +17,7 @@ class Recipes extends React.Component {
 
   render() {
     return (
-      <div>
-        {/* className="recipes"> */}
+      <div className="recipes">
         <label> Search By Recipe </label>
         <input type='text' value={this.state.recipeSearch} onChange={this.recipeSearch} placeholder='Searching...' />
         {this.props.recipes.map((recipe) => {

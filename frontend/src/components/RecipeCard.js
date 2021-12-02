@@ -25,7 +25,6 @@ class RecipeCard extends React.Component {
 
         {this.state.favorite}
         <button onClick={this.handleOnClick}>Add to Favorites</button>
-
       </div>
     );
   }
