@@ -19,10 +19,10 @@ class CreateRecipe extends Component {
 
   handleOnClick = (e) => {
     e.preventDefault();
-    console.log("a")
     this.props.createRecipes(this.state);
-    console.log("b")
   };
+
+
 
   render() {
     return (
@@ -69,7 +69,8 @@ class CreateRecipe extends Component {
             onChange={this.handleOnChange}
           />
           <br />
-          <button onClick={this.handleOnClick}>Add Recipe</button>
+          <label>Add Recipe</label>
+          <button type="submit" onClick={this.handleOnClick}></button>
         </form>
       </div>
     );
