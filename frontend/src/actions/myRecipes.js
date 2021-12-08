@@ -11,7 +11,6 @@ function getRecipes() {
 }
 
 function createRecipes(recipes) {
-  console.log("c")
   return (dispatch) => {
     fetch("http://localhost:3001/recipes", {
       method: "POST",
@@ -24,7 +23,6 @@ function createRecipes(recipes) {
       .then((res) => res.json())
       .then((recipe) => {
         dispatch({ type: "CREATE_RECIPES", payload: recipe });
-        console.log("d")
       });
   };
 }

@@ -3,7 +3,7 @@ import RecipeCard from "../components/RecipeCard";
 import { connect } from "react-redux";
 
 class Recipes extends React.Component {
-  State = {
+  state = {
     recipe: ''
   };
 
@@ -14,7 +14,7 @@ class Recipes extends React.Component {
     })
   }
 
-  filterRecipes = () => {
+  filterRecipe = () => {
     return this.props.recipes.filter(function (recipeObj) {
       if (recipeObj.name === recipeSearchFor) {
         return true;
@@ -30,9 +30,8 @@ class Recipes extends React.Component {
           <label> Search By Title </label>
           <input type='text'
             onChange={this.handleOnChange} placeholder='Searching...' />
-
           {this.props.recipes.filter(recipeObj => recipeObj.title.includes(this.state.recipe)).map(filteredRecipeObj => (
-            <RecipeCard Key={filteredREcipeObjs.id} recipeObj={filteredRecipeObj} />
+            <RecipeCard Key={filteredRecipeObjs.id} recipeObj={filteredRecipeObj} />
             //  return <RecipeCard key={recipe.id} recipeObj={recipe} />;
           ))}
 
