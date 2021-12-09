@@ -14,3 +14,5 @@ const store = createStore(
 );
 
 export default store;
+
+// why does the store take in 3 arguments ? 

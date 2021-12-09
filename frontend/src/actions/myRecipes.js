@@ -27,5 +27,4 @@ function createRecipes(recipes) {
   };
 }
 
-
 export { createRecipes, getRecipes };

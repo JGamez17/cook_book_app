@@ -33,3 +33,6 @@ class App extends React.Component {
 }
 
 export default connect(null, { getRecipes })(App);
+
+// connect is a function that connects a react component to the redux store 
+// what is the first null in this function ? why does reaact think its a state w/out it ?
