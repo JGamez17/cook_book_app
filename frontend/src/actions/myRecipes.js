@@ -1,7 +1,8 @@
 // Aysnc Action
 
 function getRecipes() {
-  return (dispatch) => {
+  return (dispatch, getState) => {
+    console.log('getState', getState())
     fetch("http://localhost:3001/recipes")
       .then((res) => res.json())
       .then((recipes) => {
