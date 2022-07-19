@@ -2,7 +2,8 @@
 
 function getRecipes() {
   return (dispatch) => {
-    fetch("http://localhost:3000/recipes")
+
+    fetch("http://localhost:3001/recipes")
       .then((res) => res.json())
       .then((recipes) => {
         dispatch({ type: "GET_RECIPES", payload: recipes });

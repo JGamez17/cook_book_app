@@ -9,7 +9,7 @@ class Recipes extends React.Component {
         {this.props.recipes.map((recipe) => {
           return <RecipeCard key={recipe.id} recipeObj={recipe} />;
         })}
-      </div>  
+      </div>
     );
   }
 }
