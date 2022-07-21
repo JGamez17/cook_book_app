@@ -2,7 +2,6 @@
 
 function getRecipes() {
   return (dispatch) => {
-
     fetch("http://localhost:3001/recipes")
       .then((res) => res.json())
       .then((recipes) => {
@@ -22,8 +21,8 @@ function createRecipes(recipes) {
       body: JSON.stringify(recipes),
     })
       .then((res) => res.json())
-      .then((recipe) => {
-        dispatch({ type: "CREATE_RECIPES", payload: recipe });
+      .then((recipes) => {
+        dispatch({ type: "CREATE_RECIPES", payload: recipes });
       });
   };
 }
