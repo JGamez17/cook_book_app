@@ -70,7 +70,7 @@ class CreateRecipe extends Component {
           />
           <br />
           <label>Add Recipe</label>
-          <button type="submit" onClick={this.handleOnClick}></button>
+          <input type="submit" vaulue="Create Recipe" onClick={this.handleOnClick} />
         </form>
       </div>
     );
