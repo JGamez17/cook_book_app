@@ -5,4 +5,11 @@ class RecipesController < ApplicationController
         render json: @recipes
      
     end
+
+
+    def create
+        @recipe = Recipe.new 
+
+        render json: @recipes
+    end     
 end
