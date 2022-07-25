@@ -2442,3 +2442,655 @@ Processing by RecipesController#index as */*
 Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 1053)
 
 
+Started GET "/recipes" for ::1 at 2022-07-22 10:42:14 -0400
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 13ms (Views: 7.8ms | ActiveRecord: 2.1ms | Allocations: 6489)
+
+
+Started GET "/recipes" for ::1 at 2022-07-22 10:42:23 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1070)
+
+
+Started POST "/recipes" for ::1 at 2022-07-22 10:43:00 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"test ", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"test "}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 100)
+
+
+Started GET "/recipes" for ::1 at 2022-07-22 10:43:41 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1070)
+
+
+Started POST "/recipes" for ::1 at 2022-07-22 10:44:01 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test ", "ingredients"=>"test ", "directions"=>"test ", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test ", "ingredients"=>"test ", "directions"=>"test ", "category"=>""}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started GET "/recipes" for ::1 at 2022-07-22 10:47:09 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 1053)
+
+
+Started GET "/recipes" for ::1 at 2022-07-22 10:47:28 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.1ms | Allocations: 1062)
+
+
+Started POST "/recipes" for ::1 at 2022-07-22 10:47:43 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min", "ingredients"=>"bu", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min", "ingredients"=>"bu", "directions"=>"", "category"=>""}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 88)
+
+
+Started POST "/recipes" for ::1 at 2022-07-22 10:47:48 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"test ", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"test "}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started GET "/recipes" for ::1 at 2022-07-22 10:47:50 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1053)
+
+
+Started GET "/recipes" for ::1 at 2022-07-22 10:47:53 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1053)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 12:35:44 -0400
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 8.5ms | ActiveRecord: 2.2ms | Allocations: 6489)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 12:35:46 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 1070)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 12:35:47 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.8ms | Allocations: 1070)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 12:35:48 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 100)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 12:36:00 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"toast ", "category"=>"test ", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"toast ", "category"=>"test "}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 88)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 12:36:00 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"toast ", "category"=>"test ", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"toast ", "category"=>"test "}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 12:36:02 -0400
+Started POST "/recipes" for ::1 at 2022-07-25 12:36:02 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"toast ", "category"=>"test ", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"toast ", "category"=>"test "}}
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 85)
+
+
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"toast ", "category"=>"test ", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"toast ", "category"=>"test "}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 12:36:04 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.3ms | Allocations: 1084)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 12:36:06 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.1ms | Allocations: 1062)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:04:32 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:11:04 -0400
+Started POST "/recipes" for ::1 at 2022-07-25 13:11:04 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#create as JSON
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 98)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:11:09 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (1.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 1.7ms | Allocations: 1075)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:11:15 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1053)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:12:14 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:12:16 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:14:16 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:14:26 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:14:28 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"", "category"=>""}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:14:29 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>""}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:14:31 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"test ", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"test "}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 137)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:14:31 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"test ", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"test "}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:15:06 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"test ", "recipe"=>{"title"=>"Bagel ", "prep"=>"5 min ", "ingredients"=>"butter or cream cheese", "directions"=>"test ", "category"=>"test "}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:16:12 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 1053)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:16:15 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:16:34 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test ", "prep"=>"test ", "ingredients"=>"test ", "directions"=>"test ", "category"=>"test ", "recipe"=>{"title"=>"test ", "prep"=>"test ", "ingredients"=>"test ", "directions"=>"test ", "category"=>"test "}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:16:34 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test ", "prep"=>"test ", "ingredients"=>"test ", "directions"=>"test ", "category"=>"test ", "recipe"=>{"title"=>"test ", "prep"=>"test ", "ingredients"=>"test ", "directions"=>"test ", "category"=>"test "}}
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:18:12 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 1053)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:18:13 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:18:22 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:18:51 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:19:10 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:19:31 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test"}}
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:19:31 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test"}}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:29:05 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (1.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 1.4ms | Allocations: 1075)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:29:19 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 81)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:31:04 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (1.8ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 40ms (Views: 23.7ms | ActiveRecord: 3.3ms | Allocations: 6156)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:31:05 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:31:10 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"", "category"=>""}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:31:11 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>""}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:31:13 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test"}}
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:31:19 -0400
+Started POST "/recipes" for ::1 at 2022-07-25 13:31:19 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test"}}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 153)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test"}}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:31:53 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1075)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:32:24 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (2.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 104ms (Views: 95.9ms | ActiveRecord: 5.0ms | Allocations: 6154)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:32:25 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Started POST "/recipes" for ::1 at 2022-07-25 13:33:32 -0400
+Started POST "/recipes" for ::1 at 2022-07-25 13:33:32 -0400
+Started POST "/recipes" for ::1 at 2022-07-25 13:33:32 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>""}}
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started POST "/recipes" for ::1 at 2022-07-25 13:33:41 -0400
+Processing by RecipesController#create as JSON
+Processing by RecipesController#create as JSON
+Completed 200 OK in 5280ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 8207)
+
+
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>""}}
+  Parameters: {"title"=>"test", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 76265ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1278336)
+
+
+Completed 200 OK in 4648ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 2745)
+
+
+Completed 500 Internal Server Error in 6119ms (ActiveRecord: 0.0ms | Allocations: 105382)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/recipes_controller.rb:14:in `create'
+Started POST "/recipes" for ::1 at 2022-07-25 13:33:58 -0400
+Processing by RecipesController#create as JSON
+Started POST "/recipes" for ::1 at 2022-07-25 13:33:58 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"", "category"=>""}}
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test"}}
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test"}}
+Completed 500 Internal Server Error in 2359ms (ActiveRecord: 0.0ms | Allocations: 382956)
+
+
+Completed 500 Internal Server Error in 11629ms (ActiveRecord: 0.0ms | Allocations: 79350)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/recipes_controller.rb:14:in `create'
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/recipes_controller.rb:14:in `create'
+Completed 500 Internal Server Error in 1781ms (ActiveRecord: 0.0ms | Allocations: 190966)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/recipes_controller.rb:14:in `create'
+Started GET "/recipes" for ::1 at 2022-07-25 13:35:07 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 25ms (Views: 19.1ms | ActiveRecord: 2.6ms | Allocations: 6489)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:35:14 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 298839ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 52992)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:40:13 -0400
+Started POST "/recipes" for ::1 at 2022-07-25 13:40:13 -0400
+Started POST "/recipes" for ::1 at 2022-07-25 13:40:13 -0400
+Started POST "/recipes" for ::1 at 2022-07-25 13:40:13 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#create as JSON
+Started POST "/recipes" for ::1 at 2022-07-25 13:40:13 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>""}}
+  Parameters: {"title"=>"test", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#create as JSON
+Processing by RecipesController#create as JSON
+Completed 200 OK in 5796ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 17110)
+
+
+Processing by RecipesController#create as JSON
+Completed 200 OK in 5782ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 13084)
+
+
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"", "category"=>""}}
+  Parameters: {"title"=>"test", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"", "ingredients"=>"", "directions"=>"", "category"=>""}}
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"", "directions"=>"", "category"=>""}}
+Completed 200 OK in 4388ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 12370)
+
+
+Completed 200 OK in 11550ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 13757)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:40:37 -0400
+Completed 500 Internal Server Error in 13543ms (ActiveRecord: 0.0ms | Allocations: 20669)
+
+
+Processing by RecipesController#create as JSON
+Started POST "/recipes" for ::1 at 2022-07-25 13:40:37 -0400
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/recipes_controller.rb:14:in `create'
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>""}}
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test"}}
+Completed 500 Internal Server Error in 50494ms (ActiveRecord: 0.0ms | Allocations: 14314)
+
+
+Completed 500 Internal Server Error in 3048ms (ActiveRecord: 0.0ms | Allocations: 34927)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/recipes_controller.rb:14:in `create'
+Started POST "/recipes" for ::1 at 2022-07-25 13:41:31 -0400
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/recipes_controller.rb:14:in `create'
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"", "category"=>"", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"", "category"=>""}}
+Completed 500 Internal Server Error in 126872ms (ActiveRecord: 0.0ms | Allocations: 3807692)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/recipes_controller.rb:14:in `create'
+Started POST "/recipes" for ::1 at 2022-07-25 13:44:07 -0400
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test", "recipe"=>{"title"=>"test", "prep"=>"test", "ingredients"=>"test", "directions"=>"test", "category"=>"test"}}
+Completed 500 Internal Server Error in 85308ms (ActiveRecord: 1.0ms | Allocations: 50967)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/recipes_controller.rb:14:in `create'
+Started GET "/recipes" for ::1 at 2022-07-25 13:45:33 -0400
+Started POST "/recipes" for ::1 at 2022-07-25 13:45:33 -0400
+Started POST "/recipes" for ::1 at 2022-07-25 13:45:33 -0400
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/recipes" for ::1 at 2022-07-25 13:45:34 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Error occurred while parsing request parameters.
+Contents:
+
+[object Object]
+Error occurred while parsing request parameters.
+Contents:
+
+[object Object]
+Processing by RecipesController#index as */*
+Processing by RecipesController#create as JSON
+Processing by RecipesController#create as JSON
+  [1m[36mRecipe Load (5.7ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+Completed 200 OK in 3226ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 2889)
+
+
+Completed 200 OK in 4102ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 34090)
+
+
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 7367ms (Views: 7347.2ms | ActiveRecord: 5.7ms | Allocations: 162475)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (4.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 30ms (Views: 19.0ms | ActiveRecord: 5.2ms | Allocations: 6189)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:45:50 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (1.0ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.0ms | Allocations: 1053)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 13:46:04 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+[object Object]
+Processing by RecipesController#create as JSON
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:49:59 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1053)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:50:14 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1056)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 13:50:27 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 1053)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 14:20:10 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 93ms (Views: 79.0ms | ActiveRecord: 1.5ms | Allocations: 6882)
+
+
+Started POST "/recipes" for ::1 at 2022-07-25 14:20:24 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+[object Object]
+Processing by RecipesController#create as JSON
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 150)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 14:20:39 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.4ms | Allocations: 1053)
+
+
+Started GET "/recipes" for ::1 at 2022-07-25 14:20:41 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.2ms | Allocations: 1053)
+
+

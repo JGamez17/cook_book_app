@@ -10,6 +10,6 @@ class RecipesController < ApplicationController
     def create
         @recipe = Recipe.new 
 
-        render json: @recipes
+        render json: @recipe
     end     
 end
