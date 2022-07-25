@@ -3,6 +3,8 @@ import RecipeCard from "../components/RecipeCard";
 import { connect } from "react-redux";
 
 class Recipes extends React.Component {
+
+
   render() {
     return (
       <div className="recipes">

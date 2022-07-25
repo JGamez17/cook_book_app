@@ -27,7 +27,7 @@ class CreateRecipe extends Component {
   render() {
     return (
       <div>
-        <form>
+        <form >
           <h2>Add Recipe</h2>
           <label>Title</label>
           <input

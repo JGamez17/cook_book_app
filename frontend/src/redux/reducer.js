@@ -4,7 +4,7 @@ const recipeReducer = (state = [], action) => {
     case "GET_RECIPES":
       return [...action.payload];
     case "CREATE_RECIPES":
-      // debugger
+
       return [...state, action.payload];
 
     default:
