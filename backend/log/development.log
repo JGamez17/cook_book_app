@@ -3669,3 +3669,12 @@ Processing by RecipesController#index as */*
 Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 1414)
 
 
+Started GET "/recipes" for ::1 at 2022-07-25 22:55:07 -0400
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 9.6ms | ActiveRecord: 1.0ms | Allocations: 7589)
+
+
