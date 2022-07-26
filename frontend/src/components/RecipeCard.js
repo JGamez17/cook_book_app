@@ -20,7 +20,7 @@ class RecipeCard extends React.Component {
         <div>{prep}</div>
         <div>{ingredients}</div>
         <br></br>
-        <img src={thumbnail} alt="images" />
+        {/* <img src={thumbnail} alt="images" /> */}
         <br></br>
 
         {this.state.favorite}

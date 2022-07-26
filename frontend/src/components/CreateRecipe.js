@@ -17,17 +17,16 @@ class CreateRecipe extends Component {
     });
   };
 
-  handleOnClick = (e) => {
+  handleSubmit = (e) => {
     e.preventDefault();
     this.props.createRecipes(this.state);
   };
 
 
-
   render() {
     return (
       <div>
-        <form >
+        <form onSubmit={this.handleSubmit}>
           <h2>Add Recipe</h2>
           <label>Title</label>
           <input
@@ -70,9 +69,9 @@ class CreateRecipe extends Component {
           />
           <br />
           <label>Add Recipe</label>
-          <input type="submit" vaulue="Create Recipe" onClick={this.handleOnClick} />
+          <input type="submit" vaulue="Create Recipe" />
         </form>
-      </div>
+      </div >
     );
   }
 }
