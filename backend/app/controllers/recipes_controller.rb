@@ -1,15 +1,18 @@
 class RecipesController < ApplicationController
     def index
-        @recipes = Recipe.all 
+        recipes = Recipe.all 
 
-        render json: @recipes
+        render json: recipes
      
     end
 
 
     def create
-        @recipe = Recipe.new 
-
-        render json: @recipe
+        recipe = Recipe.new
+            if recipe.save 
+        render json: recipe, status: :created
+        end
     end     
+
+    
 end
