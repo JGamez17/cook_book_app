@@ -14,5 +14,8 @@ class RecipesController < ApplicationController
         end
     end     
 
-    
+    def destroy
+        recipe.destroy
+    end
+
 end
