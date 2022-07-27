@@ -3678,3 +3678,404 @@ Processing by RecipesController#index as */*
 Completed 200 OK in 18ms (Views: 9.6ms | ActiveRecord: 1.0ms | Allocations: 7589)
 
 
+Started GET "/recipes" for ::1 at 2022-07-27 12:02:50 -0400
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (1.6ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 11.2ms | ActiveRecord: 2.4ms | Allocations: 7590)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 12:02:51 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1431)
+
+
+Started POST "/recipes" for ::1 at 2022-07-27 12:02:56 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+[object Object]
+Processing by RecipesController#create as JSON
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:12:in `create'
+  [1m[36mRecipe Create (1.7ms)[0m  [1m[32mINSERT INTO "recipes" DEFAULT VALUES[0m
+  ↳ app/controllers/recipes_controller.rb:12:in `create'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:12:in `create'
+Completed 201 Created in 8ms (Views: 0.3ms | ActiveRecord: 3.8ms | Allocations: 2514)
+
+
+Started POST "/recipes" for ::1 at 2022-07-27 12:03:05 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+[object Object]
+Processing by RecipesController#create as JSON
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:12:in `create'
+  [1m[36mRecipe Create (0.7ms)[0m  [1m[32mINSERT INTO "recipes" DEFAULT VALUES[0m
+  ↳ app/controllers/recipes_controller.rb:12:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:12:in `create'
+Completed 201 Created in 7ms (Views: 0.4ms | ActiveRecord: 2.4ms | Allocations: 2296)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 12:03:07 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.3ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1611)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 12:03:08 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.2ms | Allocations: 1594)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:03:26 -0400
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (1.5ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 9.8ms | ActiveRecord: 2.2ms | Allocations: 7772)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:03:28 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 1611)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:04:26 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.2ms | Allocations: 1611)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:04:31 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1611)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:04:41 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1611)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:10:46 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 48ms (Views: 40.1ms | ActiveRecord: 0.4ms | Allocations: 6746)
+
+
+Started POST "/recipes" for ::1 at 2022-07-27 14:10:57 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+[object Object]
+Processing by RecipesController#create as JSON
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms | Allocations: 68896)
+
+
+  
+NameError (undefined local variable or method `recipe_params' for #<RecipesController:0x00007fd027e3ad38>
+Did you mean?  recipe_path):
+  
+app/controllers/recipes_controller.rb:11:in `create'
+Started GET "/recipes" for ::1 at 2022-07-27 14:10:59 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.4ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 1593)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:27:06 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/jgamez/Development/projects/final_project/backend/app/controllers/recipes_controller.rb:29: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/recipes_controller.rb:29: syntax error, unexpected end-of-input, expecting end
+app/controllers/recipes_controller.rb:29: syntax error, unexpected end-of-input, expecting end
+Started GET "/recipes" for ::1 at 2022-07-27 14:28:06 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 11.8ms | ActiveRecord: 1.8ms | Allocations: 7148)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:28:08 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 1594)
+
+
+Started POST "/recipes" for ::1 at 2022-07-27 14:28:19 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+[object Object]
+Processing by RecipesController#create as JSON
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 104)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (416: unexpected token at 'object Object]'):
+  
+app/controllers/recipes_controller.rb:27:in `recipe_params'
+app/controllers/recipes_controller.rb:11:in `create'
+Started GET "/recipes" for ::1 at 2022-07-27 14:28:21 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1596)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:28:27 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 1594)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:30:17 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/jgamez/Development/projects/final_project/backend/app/controllers/recipes_controller.rb:11: syntax error, unexpected ','
+...    recipe = Recipe.new(title:, ingredients:, prep:, directi...
+...                              ^):
+  
+app/controllers/recipes_controller.rb:11: syntax error, unexpected ','
+app/controllers/recipes_controller.rb:11: syntax error, unexpected ','
+Started GET "/recipes" for ::1 at 2022-07-27 14:30:20 -0400
+  
+SyntaxError (/Users/jgamez/Development/projects/final_project/backend/app/controllers/recipes_controller.rb:11: syntax error, unexpected ','
+...    recipe = Recipe.new(title:, ingredients:, prep:, directi...
+...                              ^):
+  
+app/controllers/recipes_controller.rb:11: syntax error, unexpected ','
+app/controllers/recipes_controller.rb:11: syntax error, unexpected ','
+Started GET "/recipes" for ::1 at 2022-07-27 14:30:54 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 46ms (Views: 38.7ms | ActiveRecord: 2.4ms | Allocations: 7154)
+
+
+Started POST "/recipes" for ::1 at 2022-07-27 14:31:04 -0400
+Error occurred while parsing request parameters.
+Contents:
+
+[object Object]
+Processing by RecipesController#create as JSON
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[36mRecipe Create (0.8ms)[0m  [1m[32mINSERT INTO "recipes" DEFAULT VALUES[0m
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:13:in `create'
+Completed 201 Created in 7ms (Views: 0.8ms | ActiveRecord: 2.5ms | Allocations: 2617)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:31:06 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.1ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.1ms | Allocations: 1684)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:35:15 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 1684)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:35:18 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 1684)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:35:24 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 1684)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:35:25 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 1684)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 14:35:27 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 1684)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:15:10 -0400
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as */*
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1266)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:15:13 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:15:18 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:17:51 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:18:20 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:18:41 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 87)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:18:44 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 87)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:20:12 -0400
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as */*
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1268)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:20:36 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:21:25 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:21:51 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:23:10 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:26:21 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RecipesController#index as */*
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1268)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:28:26 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:30:39 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:32:18 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 95)
+
+
+Started POST "/recipes" for ::1 at 2022-07-27 15:32:32 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Test ", "prep"=>"test ", "ingredients"=>"test ", "directions"=>"test ", "category"=>"test ", "recipe"=>{"title"=>"Test ", "prep"=>"test ", "ingredients"=>"test ", "directions"=>"test ", "category"=>"test "}}
+[31mUnpermitted parameter: :category[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "prep", "ingredients", "directions") VALUES (?, ?, ?, ?)[0m  [["title", "Test "], ["prep", "test "], ["ingredients", "test "], ["directions", "test "]]
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+Completed 201 Created in 37ms (Views: 2.6ms | ActiveRecord: 5.3ms | Allocations: 7465)
+
+
+Started POST "/recipes" for ::1 at 2022-07-27 15:32:35 -0400
+Processing by RecipesController#create as JSON
+  Parameters: {"title"=>"Test ", "prep"=>"test ", "ingredients"=>"test ", "directions"=>"test ", "category"=>"test ", "recipe"=>{"title"=>"Test ", "prep"=>"test ", "ingredients"=>"test ", "directions"=>"test ", "category"=>"test "}}
+[31mUnpermitted parameter: :category[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+  [1m[36mRecipe Create (0.6ms)[0m  [1m[32mINSERT INTO "recipes" ("title", "prep", "ingredients", "directions") VALUES (?, ?, ?, ?)[0m  [["title", "Test "], ["prep", "test "], ["ingredients", "test "], ["directions", "test "]]
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/recipes_controller.rb:15:in `create'
+Completed 201 Created in 13ms (Views: 1.1ms | ActiveRecord: 2.3ms | Allocations: 2583)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:32:56 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 87)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:35:29 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as */*
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 2251)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 15:36:08 -0400
+Processing by RecipesController#index as */*
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 88)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 16:28:28 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:7:in `index'
+Completed 200 OK in 17ms (Views: 12.0ms | ActiveRecord: 1.0ms | Allocations: 7518)
+
+
+Started GET "/recipes" for ::1 at 2022-07-27 16:28:31 -0400
+Processing by RecipesController#index as */*
+  [1m[36mRecipe Load (0.2ms)[0m  [1m[34mSELECT "recipes".* FROM "recipes"[0m
+  ↳ app/controllers/recipes_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 1929)
+
+
