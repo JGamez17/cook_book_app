@@ -18,11 +18,10 @@ function createRecipes(recipes) {
         "Content-type": "application/json",
         accept: "application/json",
       },
-      body: recipes,
+      body: JSON.stringify(recipes),
     })
       .then((res) => res.json())
       .then((recipes) => {
-        // debugger
         dispatch({ type: "CREATE_RECIPES", payload: recipes });
       });
   };
